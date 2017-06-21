@@ -1,0 +1,3 @@
+@setlocal EnableDelayedExpansion EnableExtensions
+echo ==^> Adding AWS trusted site...
+REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Domains\amazonaws.com\s3-us-west-2" /v "http" /t REG_DWORD /d 00000002
